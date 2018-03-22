@@ -50,7 +50,7 @@ table {
 /* custom */
 a {
   color: #7e8c8d;
-  text-decoration: none;
+  text-decoration: none; // 去除超链接下划线
   -webkit-backface-visibility: hidden;
 }
 

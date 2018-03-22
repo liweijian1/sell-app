@@ -9,7 +9,7 @@
         <router-link to="/ratings">评论</router-link>
       </div>
       <div class="item-tab">
-        <router-link to="/seller">商家</router-link>
+        <router-link to="/sellers">商家</router-link>
       </div>
     </div>
     <router-view></router-view>
@@ -34,4 +34,10 @@
        .item-tab
            flex :1
            text-align : center
+           & > a
+            display : block
+            font-size : 14px
+            color : rgb(77,85,93)
+            &.active
+              color : rgb(240,20,20)
 </style>

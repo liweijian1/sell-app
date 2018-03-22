@@ -4,17 +4,22 @@ import Vue from 'vue';
 import App from './App';
 import Vuerouter from 'vue-router';
 import goods from './components/goods/goods.vue';
+import ratings from './components/ratings/ratings.vue';
+import sellers from './components/sellers/sellers.vue';
 
 Vue.use(Vuerouter);
 
 Vue.config.productionTip = false;
 
 const routes = [
-  {path: '/goods', component: goods}
+  {path: '/goods', component: goods},
+  {path: '/ratings', component: ratings},
+  {path: '/sellers', component: sellers}
 ];
 
 const router = new Vuerouter({
-  routes
+  routes,
+  linkActiveClass: 'active'
 });
 /* eslint-disable no-new */
 
@@ -24,3 +29,5 @@ new Vue({
   components: { App },
   template: '<App/>'
 });
+
+router.push('./goods');
