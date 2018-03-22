@@ -7,6 +7,8 @@ import goods from './components/goods/goods.vue';
 import ratings from './components/ratings/ratings.vue';
 import sellers from './components/sellers/sellers.vue';
 
+import './common/stylus/index.styl';
+
 Vue.use(Vuerouter);
 
 Vue.config.productionTip = false;
